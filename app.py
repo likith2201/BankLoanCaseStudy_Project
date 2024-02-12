@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-import sklearn
+
 import joblib
 import pandas as pd
 
