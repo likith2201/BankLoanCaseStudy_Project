@@ -1,20 +1,6 @@
 import streamlit as st
 from PIL import Image
-import subprocess
-import pkg_resources
-def install_package(package):
-    try:
-        # Check if package is already installed
-        pkg_resources.get_distribution(package)
-        print(f"{package} is already installed.")
-    except pkg_resources.DistributionNotFound:
-        # If not installed, install it
-        print(f"{package} not found, installing...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-        print(f"{package} has been successfully installed.")
-
-if __name__ == "__main__":
-    install_package('joblib')
+%pip  install joblib
 import joblib
 import pandas as pd
 
