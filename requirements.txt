@@ -4,3 +4,4 @@ matplotlib
 streamlit
 joblib
 scikit-learn
+sklearn
