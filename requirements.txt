@@ -4,4 +4,3 @@ pandas
 matplotlib
 streamlit==0.76.0
 joblib
-seaoborn
