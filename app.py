@@ -42,7 +42,7 @@ def run():
 
     installment = st.slider('Installment Amount', min_value=10, max_value=1000)
 
-    annual_inc = st.text_input('Annual  income in K $')
+    annual_inc = st.text_input('Annual  income in $')
 
     dti = st.slider('Debt to Income ratio', min_value=0, max_value=30)
 
