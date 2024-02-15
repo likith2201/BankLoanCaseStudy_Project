@@ -119,7 +119,7 @@ def run():
             prob_df = pd.DataFrame(prediction1_prob, columns=["Reject", "Accept"])
 
             # Check the prediction and set the message accordingly with the new condition
-            if prediction1[0] == 1 and prediction1_prob[0][1] >= 0.75:
+            if prediction1[0] == 1 and prediction1_prob[0][1] >= 0.65:
                 prediction_message = "Accept"
             else:
                 prediction_message = "Reject"
@@ -132,7 +132,7 @@ def run():
             st.dataframe(prob_df)
 
             # If the prediction is to accept and the accept probability is >= 0.75, proceed to predict interest rate
-            if prediction1[0] == 1 and prediction1_prob[0][1] >= 0.70:
+            if prediction1[0] == 1 and prediction1_prob[0][1] >= 0.60:
                 prediction2 = model2.predict(features_raw)
                 st.write(f'Predicted interest rate: {prediction2[0]:,.2f}%')
 
